@@ -47,7 +47,7 @@ function DownloadItem({ torrent }) {
         </div>
         <div className="d-flex space-between">
           <div className="text-400">Magnet: </div>
-          <a href=`${torrent.magnetURI}`>
+          <a href={torrent.magnetURI}>
             <div>
               Magnet Link
             </div>
