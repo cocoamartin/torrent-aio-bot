@@ -62,7 +62,7 @@ function DownloadItem({ torrent }) {
           <a href={torrent.downloadLink} className="btn success">
             Open
           </a>
-          <button disabled={stopping} className="btn danger" onClick={stop}>
+          <button className="btn danger" onClick={stop}>
             Delete
           </button>
         )}
