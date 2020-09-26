@@ -60,7 +60,7 @@ function DownloadItem({ torrent }) {
         )}
         {torrent.done && (
           <button className="btn danger" onClick={stop}>
-            Delete
+            Delete Completed
           </button>
         )}
       </div>
