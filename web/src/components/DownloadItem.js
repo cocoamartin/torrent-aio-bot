@@ -45,6 +45,14 @@ function DownloadItem({ torrent }) {
           <div className="text-400">Speed: </div>
           <div>{torrent.speed}</div>
         </div>
+        <div className="d-flex space-between">
+          <div className="text-400">Magnet: </div>
+          <a href=`${torrent.magnetURI}`>
+            <div>
+              Magnet Link
+            </div>
+          </a>
+        </div>
         {!torrent.done && (
           <button disabled={stopping} className="btn danger" onClick={stop}>
             Stop
@@ -54,6 +62,9 @@ function DownloadItem({ torrent }) {
           <a href={torrent.downloadLink} className="btn success">
             Open
           </a>
+          <button disabled={stopping} className="btn danger" onClick={stop}>
+            Delete
+          </button>
         )}
       </div>
     </div>
